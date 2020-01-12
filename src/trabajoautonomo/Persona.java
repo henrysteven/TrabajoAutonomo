@@ -5,18 +5,21 @@
  */
 package trabajoautonomo;
 
+
 /**
  *
  * @author Henry
  */
 public class Persona {
 
-    private String nombres;
-    private String apellidos;
-    private String cedula;
-    private int diasNacimiento;
-    private int mesesNacimiento;
-    private int anioNacimiento;
+    protected String nombres;
+    protected String apellidos;
+    protected String cedula;
+    protected int diasNacimiento;// Primitive Obsession
+    protected int mesesNacimiento;
+    protected int anioNacimiento;
+    protected String telefono;
+    protected Cargo cargo;
 
     public Persona(String nombres, String apellidos, String cedula, int diasNacimiento, int mesesNacimiento, int anioNacimiento) {
         this.nombres = nombres;
@@ -27,7 +30,6 @@ public class Persona {
             this.anioNacimiento = anioNacimiento;
             this.mesesNacimiento = mesesNacimiento;
         }
-        
 
     }
 
@@ -96,5 +98,13 @@ public class Persona {
             System.out.println("Fecha no valida");
             return false;
         }
+    }
+
+    public void cobrar() {
+        // cobra deuda a cliente
+    }
+    
+    public void pagar(){
+        // paga deuda de productos
     }
 }

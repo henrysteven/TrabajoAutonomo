@@ -3,33 +3,42 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package trabajoautonomo;
+package refatoring;
+
+import java.util.Date;
 
 /**
  *
  * @author Henry
  */
-public class Persona {
+public class Persona_refactoring {
 
     private String nombres;
     private String apellidos;
     private String cedula;
-    private int diasNacimiento;
-    private int mesesNacimiento;
-    private int anioNacimiento;
+    private Date fechaNacimineto;
+    private String telefono;
+    private Cargo_refactoring cargo;
 
-    public Persona(String nombres, String apellidos, String cedula, int diasNacimiento, int mesesNacimiento, int anioNacimiento) {
+    public Persona_refactoring(String nombres, String apellidos, String cedula, Date fechaNacimineto, String telefono, Cargo_refactoring cargo) {
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.cedula = cedula;
-        if (validarFecha(diasNacimiento, anioNacimiento, anioNacimiento)) {
-            this.diasNacimiento = diasNacimiento;
-            this.anioNacimiento = anioNacimiento;
-            this.mesesNacimiento = mesesNacimiento;
-        }
+        this.fechaNacimineto = fechaNacimineto;
+        this.telefono = telefono;
+        this.cargo = cargo;
+    }
+
+    public Persona_refactoring(String nombres, String apellidos, String cedula, Date fechaNacimiento) {
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.cedula = cedula;
+        this.fechaNacimineto= fechaNacimiento;
         
 
     }
+    
+    
 
     public String getNombres() {
         return nombres;
@@ -55,46 +64,29 @@ public class Persona {
         this.cedula = cedula;
     }
 
-    public int getDiasNacimiento() {
-        return diasNacimiento;
+    public Date getFechaNacimineto() {
+        return fechaNacimineto;
     }
 
-    public void setDiasNacimiento(int diasNacimiento) {
-        this.diasNacimiento = diasNacimiento;
+    public void setFechaNacimineto(Date fechaNacimineto) {
+        this.fechaNacimineto = fechaNacimineto;
     }
 
-    public int getMesesNacimiento() {
-        return mesesNacimiento;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setMesesNacimiento(int mesesNacimiento) {
-        this.mesesNacimiento = mesesNacimiento;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
-    public int getAniosNacimiento() {
-        return anioNacimiento;
+    public Cargo_refactoring getCargo() {
+        return cargo;
     }
 
-    public void setAniosNacimiento(int añosNacimiento) {
-        this.anioNacimiento = añosNacimiento;
+    public void setCargo(Cargo_refactoring cargo) {
+        this.cargo = cargo;
     }
 
-    private boolean validarFecha(int dia, int mes, int anio) {
-        if (dia <= 30) {
-            if (mes <= 12) {
-                if (anio >= 1997 && anio <= 2050) {
-                    return true;
-                } else {
-                    System.out.println("Fecha no valida");
-                    return false;
-                }
-            } else {
-                System.out.println("Fecha no valida");
-                return false;
-            }
-        } else {
-            System.out.println("Fecha no valida");
-            return false;
-        }
-    }
+    
 }
