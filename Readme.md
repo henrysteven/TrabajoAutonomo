@@ -1,17 +1,17 @@
-Algunos de los comandos de Git básicos son:
+Algunos de los comandos de Git bÃ¡sicos son:
 ```
 git status
 git add
 git commit
 ```
 
-# El encabezado más largo
-## El segundo encabezado más largo
-###### El encabezado más pequeño
+# El encabezado mÃ¡s largo
+## El segundo encabezado mÃ¡s largo
+###### El encabezado mÃ¡s pequeÃ±o
 
 - **George Washington**
 - _John Adams_
-- Thomas Jefferson
+- **Thomas Jefferson**
 
 1. James Madison
 2. James Monroe
