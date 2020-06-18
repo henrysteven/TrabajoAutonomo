@@ -9,8 +9,8 @@ git commit
 ## El segundo encabezado más largo
 ###### El encabezado más pequeño
 
-- George Washington
-- John Adams
+- *George Washington*
+- _John Adams_
 - Thomas Jefferson
 
 1. James Madison
@@ -18,6 +18,6 @@ git commit
 3. John Quincy Adams
 
 
-1. Primer elemento de la lista
+4. Primer elemento de la lista
    - Primer elemento de la lista anidado
      - Segundo elemento de la lista anidado
