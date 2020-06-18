@@ -9,7 +9,7 @@ git commit
 ## El segundo encabezado más largo
 ###### El encabezado más pequeño
 
-- *George Washington*
+- **George Washington**
 - _John Adams_
 - Thomas Jefferson
 
